@@ -2,13 +2,13 @@
 import os
 from pyrogram import Client, filters
 
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHANNEL_FSUB = os.getenv("CHANNEL_FSUB")
-CHANNEL_TARGET = os.getenv("CHANNEL_TARGET")
+API_ID = int(os.getenv("24946786"))
+API_HASH = os.getenv("7979742075:AAF3yyPO0KBdLTSgjeG7LGJWQ859masX0Ek")
+BOT_TOKEN = os.getenv("a7bb54f7f9cb222294e85803b395c7fb")
+CHANNEL_FSUB = os.getenv("asupanmenfesmu2")
+CHANNEL_TARGET = os.getenv("tarothasupan")
 
-app = Client("bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client("bot", api_id=24946786, api_hash=AAF3yyPO0KBdLTSgjeG7LGJWQ859masX0Ek, bot_token=a7bb54f7f9cb222294e85803b395c7fb)
 
 @app.on_message(filters.private & filters.command("start"))
 async def start(client, message):
